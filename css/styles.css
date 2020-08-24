@@ -31,11 +31,10 @@ h1,h2,h3,h4 {
 
 .huddle__header{
     background-color: coral;
+    /* margin-left:6%; */
+    /* margin: 0 auto; */
 }
 
-/* .huddle__title{
-    background-color: rgb(204, 173, 50);
-} */
 
 .huddle__logo{
     width: 15%;
@@ -44,16 +43,15 @@ h1,h2,h3,h4 {
 
 .hero{
     display: flex;
-    justify-content: center;
-    /* height: 30%; */
-    /* background-color: darkred; */
-    /* height: 100%; */
-    padding: 2em 0;
+    justify-content: space-evenly;
+    align-items: start;
+    background-color: darkred;
+    /* padding: 2em 0; */
 }
 
 .hero__image-wrapper{
-    /* background-color: cornflowerblue; */
-    width: 60%;
+    background-color: cornflowerblue;
+    width: 50%;
 }
 
 .hero__image{
@@ -62,6 +60,36 @@ h1,h2,h3,h4 {
 
 .hero__text{
     margin-left: 2em;
-    /* background-color: darkorange; */
-    width: 40%;
+    margin-top: 3em;
+    background-color: darkorange;
+    width: 30%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    color: white;
+}
+
+.hero__title{
+    font-size: 3em;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.hero__paragraph-wrapper{
+    margin: 2em 0;
+}
+
+.hero__paragraph{
+    font-size:1.2em;
+    font-weight: 400;
+}
+
+.hero__button{
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.4em;
+    padding: 1em 3em;
+    color: hsl(257, 40%, 49%);
 }
