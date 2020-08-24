@@ -8,7 +8,6 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-size: 62.5%;
     font-weight: 400;
-    /* background-color: black; */
 
 }
 
@@ -18,9 +17,51 @@ h1,h2,h3,h4 {
 
 .container{
     background-image: url('../images/bg-desktop.svg');
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-attachment: fixed;
     background-color:hsl(257, 40%, 49%);
     height: 100vh;
+    padding: 1em 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.huddle__header{
+    background-color: coral;
+}
+
+/* .huddle__title{
+    background-color: rgb(204, 173, 50);
+} */
+
+.huddle__logo{
+    width: 15%;
+    vertical-align: middle;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    /* height: 30%; */
+    /* background-color: darkred; */
+    /* height: 100%; */
+    padding: 2em 0;
+}
+
+.hero__image-wrapper{
+    /* background-color: cornflowerblue; */
+    width: 60%;
+}
+
+.hero__image{
+    width: 100%;
+}
+
+.hero__text{
+    margin-left: 2em;
+    /* background-color: darkorange; */
+    width: 40%;
 }
