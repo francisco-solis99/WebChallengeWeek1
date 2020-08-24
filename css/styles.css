@@ -41,7 +41,7 @@ h1,h2,h3,h4 {
     vertical-align: middle;
 }
 
-.hero{
+.huddle__hero{
     display: flex;
     justify-content: center;
     align-items: start;
@@ -95,4 +95,8 @@ h1,h2,h3,h4 {
     box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.40);
     cursor: pointer;
     outline: none;
+}
+
+.huddle__media{
+    background-color: lawngreen;
 }
