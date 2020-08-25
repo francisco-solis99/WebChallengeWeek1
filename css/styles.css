@@ -8,6 +8,13 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-size: 62.5%;
     font-weight: 400;
+    background-image: url('../images/bg-desktop.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    background-color:hsl(257, 40%, 49%);
 
 }
 
@@ -16,14 +23,11 @@ h1,h2,h3,h4 {
 }
 
 .container{
-    background-image: url('../images/bg-desktop.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color:hsl(257, 40%, 49%);
+    /* background-color: lightcoral; */
     height: 100vh;
-    padding: 1em 5%;
+    /* padding: 1em 5%; */
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -31,7 +35,7 @@ h1,h2,h3,h4 {
 
 .huddle__header{
     /* background-color: coral; */
-    margin-left:3%;
+    margin-left:4%;
     /* margin: 0 auto; */
 }
 
@@ -100,13 +104,14 @@ h1,h2,h3,h4 {
 .huddle__media{
     display: flex;
     justify-content: flex-end;
-
+    /* background-color: lightgreen; */
 }
 
 .medialist{
     display: flex;
     list-style-type: none;
     justify-content: space-evenly;
+    padding-right: 4%;
     /* background-color: lightcoral; */
 }
 
