@@ -97,7 +97,7 @@ h1,h2,h3,h4 {
     border: none;
     border-radius: 20px;
     font-size: 1.8em;
-    padding: 1em 3em;
+    padding: 0.8em 2.8em;
     color: hsl(257, 40%, 49%);
     box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.40);
     cursor: pointer;
@@ -221,7 +221,8 @@ h1,h2,h3,h4 {
     .medialist{
         padding-right: 0;
         padding-left: 0;
-        margin-left: 3%;
+        margin-left: 6%;
+        margin-top: 2em;
     }
     
     .media__item{
@@ -268,10 +269,16 @@ h1,h2,h3,h4 {
     .huddle__header{
         padding-left:4%;
     }
+
+
 }
 
 @media screen and (max-width: 320px){
 
 }
 
-/* Porbar el center y probar colocar nuevamnete todo en auto mas que nada lso porcentajes */
+/* Porbar el center y probar colocar nuevamnete todo en auto mas que nada lso porcentajes 
+
+checar tamañño del boton de registro en pantallas desktop o tablets
+
+*/
