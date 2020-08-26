@@ -13,7 +13,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 100vh;
+    height: 100vh;
     background-color:hsl(257, 40%, 49%);
 
 }
@@ -39,16 +39,19 @@ h1,h2,h3,h4 {
     /* margin: 0 auto; */
 }
 
+.huddle__title{
+    display: inline-block;
+}
 
 .huddle__logo{
-    width: 15%;
+    width: 60%;
     vertical-align: middle;
 }
 
 .huddle__hero{
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     /* background-color: darkred; */
     /* padding: 2em 0; */
 }
@@ -94,7 +97,7 @@ h1,h2,h3,h4 {
     border: none;
     border-radius: 20px;
     font-size: 1.8em;
-    padding: 1em 3em;
+    padding: 0.8em 2.8em;
     color: hsl(257, 40%, 49%);
     box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.40);
     cursor: pointer;
@@ -135,3 +138,147 @@ h1,h2,h3,h4 {
     color: white;
    
 }
+
+@media screen and (max-width: 1024px){
+    .huddle__header{
+        margin-left:0;
+    }
+
+    .huddle__hero{
+        /* background-color: darkred; */
+        align-items: center;
+    }
+    
+    .hero__text{
+        margin-top: 0;
+        /* background-color: darkorange; */
+        padding: 0;
+    }
+
+    .hero__image-wrapper{
+        /* background-color: cornflowerblue; */
+        width: 60%;
+    }
+
+    .hero__title{
+        font-size: 2.8em;
+    }
+    
+    .hero__paragraph-wrapper{
+        margin: 1em 0;
+    }
+
+    body{
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .huddle__hero{
+        flex-direction: column;
+    }
+
+    .hero__text{
+        margin-top:1.5em;
+        text-align: center;
+        width:80%;
+    }
+
+    .hero__image-wrapper{
+        /* background-color: cornflowerblue; */
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero__image{
+        width: 70%;
+    }
+
+    .hero__title{
+        font-size: 2.4em;
+    }
+    
+    .hero__paragraph-wrapper{
+        margin: 1.5em 0;
+    }
+
+    .hero__paragraph{
+        font-size: 1.4em;
+    }
+
+    .hero__button{
+        
+        font-size: 1.5em;
+        padding: 8px 3em;
+    }
+
+    .huddle__media{
+        justify-content: center;
+        /* background-color: lightgreen; */
+    }
+    
+    .medialist{
+        padding-right: 0;
+        padding-left: 0;
+        margin-left: 6%;
+        margin-top: 2em;
+    }
+    
+    .media__item{
+        margin-right: 0;    
+        margin: 0 5px;
+        height: auto;
+        width: auto;
+        padding: 3px;
+    }
+    
+    .media__item i{
+        font-size: 1.2em;
+        padding: 5px;       
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    body{
+        background-image: url('../images/bg-mobile.svg');
+        background-size: cover;
+    }
+
+    .container{
+        justify-content: space-evenly;
+    }
+
+
+    .hero__text{
+        width:90%;
+    }
+
+    .hero__image-wrapper{
+        /* background-color: cornflowerblue; */
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero__image{
+        width: 100%;
+    }
+
+    .huddle__header{
+        padding-left:4%;
+    }
+
+
+}
+
+@media screen and (max-width: 320px){
+
+}
+
+/* Porbar el center y probar colocar nuevamnete todo en auto mas que nada lso porcentajes 
+
+checar tamañño del boton de registro en pantallas desktop o tablets
+
+*/
